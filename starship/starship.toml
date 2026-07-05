@@ -1,0 +1,73 @@
+format = """
+$os$username[@](bold blue)$hostname:$directory$git_branch$character
+"""
+
+add_newline = false
+
+[battery]
+full_symbol = "• "
+charging_symbol = "⇡ "
+discharging_symbol = "⇣ "
+
+[[battery.display]]
+threshold = 100
+
+[character]
+success_symbol = '[➜](bold purple)'
+error_symbol = '[➜](bold red)'
+
+[directory]
+truncation_length = 255
+#truncation_symbol = '…/'
+truncate_to_repo = false
+use_logical_path = false
+read_only = " "
+#format = "[$path](bold cyan)"
+
+[docker_context]
+symbol = " "
+format = "[$symbol$context]($style)"
+
+[git_branch]
+#style = "bold yellow"
+symbol = " "
+#truncation_length = 10
+#truncation_symbol = ''
+format = "[\\($symbol$branch(:$remote_branch)\\)]($style)"
+
+[git_status]
+ahead = '⇡${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+behind = '⇣${count}'
+format = "([\\[$all_status$ahead_behind\\]]($style))"
+style = "bold purple"
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold blue)"
+
+[kubernetes]
+disabled = false
+symbol = "󰠳"
+format = "$symbol [$context](bold red):[$namespace](bold cyan)"
+
+[memory_usage]
+symbol = " "
+disabled = false
+threshold = -1
+style = 'bold dimmed green'
+
+[time]
+format = "[$time]($style)"
+disabled = false
+
+[os]
+disabled = false
+
+[os.symbols]
+Ubuntu = " "
+CachyOS = " "
+
+[username]
+show_always = true
+format = "[$user](bold blue)"
