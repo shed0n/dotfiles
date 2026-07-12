@@ -33,23 +33,17 @@ config.window_frame = {
 }
 
 config.keys = {
+    -- copy to the clipboard
+    {
+      key = 'c',
+      mods = 'CTRL',
+      action = wezterm.action.CopyTo 'Clipboard'
+    },
     -- paste from the clipboard
     { 
       key = 'v',
       mods = 'CTRL',
       action = wezterm.action.PasteFrom 'Clipboard' 
-    },
-    -- paste from the primary selection
-    {
-      key = 'V', 
-      mods = 'CTRL|SHIFT', 
-      action = wezterm.action.PasteFrom 'Clipboard' 
-    },
-    -- copy to the clipboard
-    {
-      key = 'C',
-      mods = 'CTRL',
-      action = wezterm.action.CopyTo 'Clipboard'
     },
     -- This will create a new split and run your default program inside it
     {
