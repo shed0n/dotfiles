@@ -36,7 +36,7 @@ config.keys = {
     -- copy to the clipboard
     {
       key = 'c',
-      mods = 'CTRL',
+      mods = 'CTRL|SHIFT',
       action = wezterm.action.CopyTo 'Clipboard'
     },
     -- paste from the clipboard
