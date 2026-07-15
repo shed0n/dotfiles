@@ -13,10 +13,25 @@ Easiest path:
 4. `stow wezterm` (or whatever package you added)
 
 ```sh
+├── fastfetch
+│   └── .config
+│       └── fastfetch
+│           ├── ascii
+│           ├── images
+│           └── config.jsonc
 ├── flameshot
 │   └── .config
 │       └── flameshot
 │           └── flameshot.ini
+├── niri
+│   └── .config
+│       └── niri
+│           ├── cfg
+│           └── config.kdl
+├── noctalia
+│   └── .config
+│       └── noctalia
+│           └── colors.json
 ├── scripts
 │   └── .config
 │       └── scripts
@@ -27,6 +42,10 @@ Easiest path:
 │           └── config.yaml
 ├── starship
 │   └── starship.toml
+├── tmux
+│   └── .config
+│       └── tmux
+│           └── tmux.conf
 ├── wezterm
 │   └── .config
 │       └── wezterm
@@ -51,7 +70,6 @@ You can also map packages like `wezterm`, `flameshot`, etc. you just need to fol
 Typically if I'm installing on a machine that has an existing configuration for a package, I'll use the `--adopt` directive for stow, then do a `git restore`. Here's what that looks like:
 1. Clone the repo and `cd` in there.
 2. For each package in the repo that you want symlinked, run `stow <package>`. You will need to use `--adopt` if the package already exists on the machine. This creates a symlink for the package to your dotfiles repo.
-3. If you want to use the config you had previously stored in your dotfiles repo, then run `git restore <dir>` or `git restore .` if you're feeling wild. If you want to **overwrite** the neovim config you had in your dotfiles repo with the one you have currently at `~/.config/nvim`, then don't do the restore.
-
+3. If you want to use the config you had previously stored in your dotfiles repo, then run `git restore <dir>` or `git restore .` if you're feeling wild.
 
 > `--adopt` flag *will* overwrite the contents of your current directory with the contents from your target directory.

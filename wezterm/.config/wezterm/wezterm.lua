@@ -9,6 +9,7 @@ config = {
     default_cursor_style = "BlinkingBlock",
     font = wezterm.font("JetBrains Mono", { weight = "Bold" }),
     font_size = 10.0,
+    scrollback_lines = 15000,
 }
 --config.color_scheme = 'London Tube (base16)'
 config.color_scheme = 'Solarized Darcula (Gogh)'
@@ -56,6 +57,28 @@ config.keys = {
       mods = 'CTRL|SHIFT',
       action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
     },
+    -- saves the terminal history by writing current pane scrollback to a file
+    {
+      key = 's',
+      mods = 'CTRL|SHIFT',
+      action = wezterm.action.EmitEvent('save-scrollback'),
+    },
   }
+
+wezterm.on('save-scrollback', function(window, pane)
+  -- 15000 lines to match scrollback size
+  local text = pane:get_lines_as_text(15000)
+  local home = os.getenv("HOME")
+  local timestamp = os.date("%Y-%m-%d_%H-%M-%S")
+  local file_path = home .. "/Downloads/terminal_history_" .. timestamp .. ".txt"
+  -- write the text to the file
+  local file = io.open(file_path, "w")
+  if file then
+    file:write(text)
+    file:close()
+    -- show a quick notification to show it worked
+    window:toast_notification("WezTerm", "Terminal history saved to " .. file_path, nil, 2000)
+  end
+end)
 
 return config
