@@ -34,6 +34,11 @@
             "keyColor": "green"
         },
         {
+            "type": "display",
+            "key": "│ ├󰍹 ",
+            "keyColor": "green"
+        },
+        {
             "type": "memory",
             "key": "│ ├󰑭 ",
             "keyColor": "green"
@@ -55,29 +60,23 @@
         {
             "type": "os",
             "key": "  OS",
-            "keyColor": "yellow"
+            "keyColor": "blue"
         },
         {
             "type": "kernel",
             "key": "│ ├󰌽 ",
-            "keyColor": "yellow"
-        },
-        {
-            "type": "bios",
-            "key": "│ ├󰖡 ",
-            "keyColor": "yellow"
+            "keyColor": "blue"
         },
         {
             "type": "packages",
             "key": "│ ├󰏗 ",
-            "keyColor": "yellow"
+            "keyColor": "blue"
         },
         {
             "type": "shell",
-            "key": "└ └󰞷 ",
-            "keyColor": "yellow"
+            "key": "│ ├󰞷 ",
+            "keyColor": "blue"
         },
-        "break",
         {
             "type": "de",
             "key": "󰧨  DE",
@@ -94,8 +93,8 @@
             "keyColor": "blue"
         },
         {
-            "type": "wmtheme",
-            "key": "│ ├󰉦 ",
+            "type": "cursor",
+            "key": "│ ├󰆿 ",
             "keyColor": "blue"
         },
         {
@@ -123,11 +122,11 @@
             "key": "  ›  Uptime  ",
             "keyColor": "magenta"
         },
-        {
-            "type": "datetime",
-            "key": "  ›  DateTime  ",
-            "keyColor": "magenta"
-        },
+        // {
+        //     "type": "datetime",
+        //     "key": "  ›  DateTime  ",
+        //     "keyColor": "magenta"
+        // },
         {
             "type": "custom",
             "format": "\u001b[38;5;246m└─────────────────────────────────────────────────────────┘"
@@ -139,4 +138,3 @@
         }
     ]
 }
-
