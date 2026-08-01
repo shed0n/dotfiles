@@ -1,6 +1,3 @@
-// ────────────── Input Configuration ──────────────
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
-
 input {
     keyboard {
         xkb {
@@ -23,6 +20,6 @@ input {
         accel-speed 0.0
     }
 
-    focus-follows-mouse // Automatically focus windows under the mouse pointer
+    focus-follows-mouse max-scroll-amount="0%" // Automatically focus windows which are already fully visible on your screen under the mouse pointer
     workspace-auto-back-and-forth // Enable workspace back & forth switching
 }
