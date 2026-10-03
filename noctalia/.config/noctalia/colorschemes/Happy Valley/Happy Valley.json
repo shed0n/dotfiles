@@ -1,0 +1,40 @@
+{
+  "name": "Happy Valley",
+  "author": "Shedon",
+  "dark": {
+    "mPrimary": "#5A8F4A",
+    "mOnPrimary": "#0E1C0A",
+    "mSecondary": "#7B9E72",
+    "mOnSecondary": "#0E1C0A",
+    "mTertiary": "#1E8B9B",
+    "mOnTertiary": "#FFFFFF",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#141C16",
+    "mOnSurface": "#DEE8E0",
+    "mSurfaceVariant": "#1E2A22",
+    "mOnSurfaceVariant": "#9BB0A0",
+    "mOutline": "#3C5042",
+    "mShadow": "#0A100B",
+    "mHover": "#27372C",
+    "mOnHover": "#FFFFFF"
+  },
+  "light": {
+    "mPrimary": "#5A8F4A",
+    "mOnPrimary": "#0E1C0A",
+    "mSecondary": "#7B9E72",
+    "mOnSecondary": "#0E1C0A",
+    "mTertiary": "#1E8B9B",
+    "mOnTertiary": "#FFFFFF",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#141C16",
+    "mOnSurface": "#DEE8E0",
+    "mSurfaceVariant": "#1E2A22",
+    "mOnSurfaceVariant": "#9BB0A0",
+    "mOutline": "#3C5042",
+    "mShadow": "#0A100B",
+    "mHover": "#27372C",
+    "mOnHover": "#FFFFFF"
+  }
+}

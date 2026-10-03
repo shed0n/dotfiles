@@ -1,0 +1,40 @@
+{
+  "name": "Monkey Shrine",
+  "author": "Shedon",
+  "dark": {
+    "mPrimary": "#429B82",
+    "mOnPrimary": "#091713",
+    "mSecondary": "#68B39E",
+    "mOnSecondary": "#091713",
+    "mTertiary": "#8AA072",
+    "mOnTertiary": "#121A0E",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#0E1412",
+    "mOnSurface": "#D2E0DC",
+    "mSurfaceVariant": "#17211E",
+    "mOnSurfaceVariant": "#8E9E99",
+    "mOutline": "#354742",
+    "mShadow": "#060A08",
+    "mHover": "#22302C",
+    "mOnHover": "#FFFFFF"
+  },
+  "light": {
+    "mPrimary": "#429B82",
+    "mOnPrimary": "#091713",
+    "mSecondary": "#68B39E",
+    "mOnSecondary": "#091713",
+    "mTertiary": "#8AA072",
+    "mOnTertiary": "#121A0E",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#0E1412",
+    "mOnSurface": "#D2E0DC",
+    "mSurfaceVariant": "#17211E",
+    "mOnSurfaceVariant": "#8E9E99",
+    "mOutline": "#354742",
+    "mShadow": "#060A08",
+    "mHover": "#22302C",
+    "mOnHover": "#FFFFFF"
+  }
+}

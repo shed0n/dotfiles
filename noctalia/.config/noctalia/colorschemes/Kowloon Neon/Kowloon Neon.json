@@ -1,0 +1,40 @@
+{
+  "name": "Kowloon Neon",
+  "author": "Shedon",
+  "dark": {
+    "mPrimary": "#4FA8B8",
+    "mOnPrimary": "#101418",
+    "mSecondary": "#3E6B7A",
+    "mOnSecondary": "#FFFFFF",
+    "mTertiary": "#627B8A",
+    "mOnTertiary": "#FFFFFF",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#14171A",
+    "mOnSurface": "#D0D6DC",
+    "mSurfaceVariant": "#1E2328",
+    "mOnSurfaceVariant": "#8B97A0",
+    "mOutline": "#3A434C",
+    "mShadow": "#0A0C0E",
+    "mHover": "#283037",
+    "mOnHover": "#FFFFFF"
+  },
+  "light": {
+    "mPrimary": "#4FA8B8",
+    "mOnPrimary": "#101418",
+    "mSecondary": "#E0A343",
+    "mOnSecondary": "#101418",
+    "mTertiary": "#627B8A",
+    "mOnTertiary": "#FFFFFF",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#14171A",
+    "mOnSurface": "#D0D6DC",
+    "mSurfaceVariant": "#1E2328",
+    "mOnSurfaceVariant": "#8B97A0",
+    "mOutline": "#3A434C",
+    "mShadow": "#0A0C0E",
+    "mHover": "#283037",
+    "mOnHover": "#FFFFFF"
+  }
+}

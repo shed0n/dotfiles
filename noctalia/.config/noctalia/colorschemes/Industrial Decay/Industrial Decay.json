@@ -1,0 +1,40 @@
+{
+  "name": "Industrial Decay",
+  "author": "Shedon",
+  "dark": {
+    "mPrimary": "#E87A3E",
+    "mOnPrimary": "#1A1B1E",
+    "mSecondary": "#EFA072",
+    "mOnSecondary": "#1A1B1E",
+    "mTertiary": "#993B33",
+    "mOnTertiary": "#FFFFFF",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#1A1D20",
+    "mOnSurface": "#D9DDD5",
+    "mSurfaceVariant": "#252B30",
+    "mOnSurfaceVariant": "#A5AFA0",
+    "mOutline": "#4B5652",
+    "mShadow": "#0F1113",
+    "mHover": "#2C343B",
+    "mOnHover": "#FFFFFF"
+  },
+  "light": {
+    "mPrimary": "#E87A3E",
+    "mOnPrimary": "#1A1B1E",
+    "mSecondary": "#EFA072",
+    "mOnSecondary": "#1A1B1E",
+    "mTertiary": "#993B33",
+    "mOnTertiary": "#FFFFFF",
+    "mError": "#CF413E",
+    "mOnError": "#FFFFFF",
+    "mSurface": "#1A1D20",
+    "mOnSurface": "#D9DDD5",
+    "mSurfaceVariant": "#252B30",
+    "mOnSurfaceVariant": "#A5AFA0",
+    "mOutline": "#4B5652",
+    "mShadow": "#0F1113",
+    "mHover": "#2C343B",
+    "mOnHover": "#FFFFFF"
+  }
+}
