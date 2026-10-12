@@ -1,5 +1,4 @@
     prefer-no-csd
-    // screenshot-path null
     screenshot-path "~/Downloads/%Y-%m-%d_%H-%M-%S.png"
 
     environment {
@@ -14,6 +13,13 @@
     cursor {
         xcursor-theme "capitaine-cursors"
         xcursor-size 24
+    }
+
+    blur {
+        passes 2        // more passes = stronger blur (default: 3)
+        offset 3.0      // sample distance per pass (default: 3.0)
+        noise 0.03      // grain overlay (default: 0.02)
+        saturation 1.0  // color saturation boost (default: 1.5)
     }
 
     debug {

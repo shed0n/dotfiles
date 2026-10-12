@@ -1,0 +1,215 @@
+config_version = 14
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    capsule = true
+    enabled = false
+    end = [
+        "tray",
+        "weather",
+        "notifications",
+        "clipboard",
+        "network",
+        "bluetooth",
+        "volume",
+        "brightness",
+        "battery",
+        "control-center",
+        "session"
+    ]
+    margin_edge = 4
+    margin_ends = 4
+
+        [bar.default.monitor.DP-1]
+        enabled = true
+        end = [
+            "media",
+            "tray",
+            "weather",
+            "notifications",
+            "clipboard",
+            "network",
+            "bluetooth",
+            "volume",
+            "control-center",
+            "session"
+        ]
+        start = [ "launcher", "group:g1", "active_window", "wallpaper", "workspaces" ]
+
+            [[bar.default.monitor.DP-1.capsule_group]]
+            accordion = false
+            accordion_direction = "end"
+            border_width = 1.0
+            enabled = true
+            fill = "surface_variant"
+            id = "g1"
+            members = [ "cpu", "ram", "temp" ]
+            opacity = 1.0
+            padding = 6.0
+
+[dock]
+active_monitor_only = true
+auto_hide = true
+concave_edge_corners = false
+cross_axis_padding = 4
+enabled = true
+icon_size = 32
+inactive_opacity = 0.99999997764825821
+inactive_scale = 1.0
+item_spacing = 4
+magnification_scale = 1.1500000022351742
+main_axis_padding = 4
+monitors = [ "DP-1" ]
+reserve_space = false
+show_instance_count = false
+
+[location]
+address = "São Carlos"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+monitors = [ "DP-1" ]
+
+[osd]
+monitors = [ "DP-1" ]
+
+[shell]
+polkit_agent = true
+
+    [shell.screenshot]
+    annotate = true
+
+    [shell.session]
+    grid_columns = 5
+
+[theme]
+custom_palette = "Payon"
+source = "custom"
+
+[wallpaper]
+directory = "/home/shedon/Pictures/Wallpapers"
+
+    [wallpaper.default]
+    path = "/home/shedon/Pictures/Wallpapers/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg"
+
+    [wallpaper.last]
+    path = "/home/shedon/Pictures/Wallpapers/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/shedon/Pictures/Wallpapers/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/shedon/Pictures/Wallpapers/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg"
+
+[widget.active_window]
+display = "icon_only"
+icon_size = 18
+min_length = 0
+
+[widget.clipboard]
+enabled = false
+
+[widget.cpu]
+show_value = false
+
+[widget.launcher]
+custom_image = "/usr/share/icons/cachyos.svg"
+custom_image_colorize = true
+
+[widget.media]
+enabled = false
+
+[widget.network]
+enabled = false
+
+[widget.ram]
+show_value = false
+
+[widget.session]
+enabled = false
+
+[widget.sysmon]
+stat = "cpu_temp"
+
+[widget.taskbar]
+show_active_indicator = false
+
+[widget.temp]
+show_value = false
+
+[widget.tray]
+drawer = true
+
+[widget.wallpaper]
+enabled = false
+
+[widget.weather]
+show_condition = false
+
+[widget.workspaces]
+enabled = false

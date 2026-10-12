@@ -3,6 +3,21 @@
         clip-to-geometry true
     }
 
+    window-rule {
+        background-effect {
+          blur true
+          xray false
+        }
+    }
+
+    // Floating Noctalia settings window.
+    window-rule {
+        match app-id="dev.noctalia.Noctalia"
+        open-floating true
+        default-column-width { fixed 1080; }
+        default-window-height { fixed 920; }
+    }
+
      // if you use steam you will probably like these
     window-rule {
         match app-id="steam"
@@ -14,6 +29,11 @@
        match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
        default-floating-position x=10 y=10 relative-to="bottom-right"
        open-focused false
+    }
+
+    window-rule {
+        match app-id="steam" title=r#"^[Ss]team$"#
+        open-maximized true
     }
 
     window-rule {
@@ -37,6 +57,14 @@
     }
 
     layer-rule {
-        match namespace="^noctalia-wallpaper*"
+        match namespace="^noctalia-wallpaper"
         place-within-backdrop true
+    }
+
+    layer-rule {
+        match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+        background-effect {
+          xray false
+          // blur false
+        }
     }

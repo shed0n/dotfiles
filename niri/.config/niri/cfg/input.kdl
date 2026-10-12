@@ -9,17 +9,18 @@ input {
     }
 
     touchpad {
-        tap // Enable tap-to-click
-        natural-scroll // Enable natural (macOS-style) scrolling
+        tap
+        natural-scroll
     }
 
     mouse {
-        // If you want to disable Mouse Acceleration,
-        // uncomment the lines below.
+        // If you want to disable Mouse Acceleration uncomment the lines below.
         accel-profile "flat"
         accel-speed 0.0
     }
 
-    focus-follows-mouse max-scroll-amount="0%" // Automatically focus windows which are already fully visible on your screen under the mouse pointer
-    workspace-auto-back-and-forth // Enable workspace back & forth switching
+    // Automatically focus windows which are already fully visible on your screen under the mouse pointer
+    // Enable workspace back & forth switching
+    focus-follows-mouse max-scroll-amount="0%"
+    workspace-auto-back-and-forth
 }

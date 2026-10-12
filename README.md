@@ -29,9 +29,13 @@ Easiest path:
 │           ├── cfg
 │           └── config.kdl
 ├── noctalia
-│   └── .config
-│       └── noctalia
-│           └── colors.json
+│   ├── .config
+│   │   └── noctalia
+│   │       └── palettes
+│   ├── .local
+│   │   └── state
+│   │       └── noctalia
+│   │           └── settings.toml
 ├── scripts
 │   └── .config
 │       └── scripts
