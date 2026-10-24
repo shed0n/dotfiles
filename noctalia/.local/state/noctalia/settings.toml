@@ -1,4 +1,8 @@
-config_version = 14
+config_version = 15
+
+[audio]
+enable_overdrive = true
+enable_screenshot_sounds = false
 
 [bar]
 order = [ "default" ]
@@ -23,20 +27,11 @@ order = [ "default" ]
     margin_ends = 4
 
         [bar.default.monitor.DP-1]
+        center = [ "workspaces", "clock" ]
         enabled = true
-        end = [
-            "media",
-            "tray",
-            "weather",
-            "notifications",
-            "clipboard",
-            "network",
-            "bluetooth",
-            "volume",
-            "control-center",
-            "session"
-        ]
-        start = [ "launcher", "group:g1", "active_window", "wallpaper", "workspaces" ]
+        end = [ "tray", "weather", "notifications", "bluetooth", "volume", "control-center", "session" ]
+        padding = 8
+        start = [ "launcher", "group:g1", "active_window", "wallpaper" ]
 
             [[bar.default.monitor.DP-1.capsule_group]]
             accordion = false
@@ -49,29 +44,45 @@ order = [ "default" ]
             opacity = 1.0
             padding = 6.0
 
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
 [dock]
 active_monitor_only = true
 auto_hide = true
 concave_edge_corners = false
 cross_axis_padding = 4
-enabled = true
+enabled = false
 icon_size = 32
 inactive_opacity = 0.99999997764825821
 inactive_scale = 1.0
-item_spacing = 4
+item_spacing = 2
 magnification_scale = 1.1500000022351742
-main_axis_padding = 4
-monitors = [ "DP-1" ]
+main_axis_padding = 8
 reserve_space = false
 show_instance_count = false
+
+    [dock.monitor.DP-1]
+    enabled = true
+    reserve_space = false
 
 [location]
 address = "São Carlos"
 
+[lockscreen]
+monitors = [ "DP-1" ]
+
 [lockscreen_widgets]
-enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
+widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1", "lockscreen-widget-0000000000000001" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -101,6 +112,7 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -128,28 +140,62 @@ widget_order = [ "lockscreen-login-box@DP-2", "lockscreen-login-box@DP-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 1036.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        show_forecast = false
 
 [notification]
 monitors = [ "DP-1" ]
 
 [osd]
+enabled = false
 monitors = [ "DP-1" ]
 
 [shell]
+avatar_path = "/home/shedon/Downloads/avatar1636000_8.gif"
 polkit_agent = true
+
+    [shell.launcher]
+    category_icons_only = true
+    layout = "simple"
+
+    [shell.mpris]
+    blacklist = [ "firefox" ]
+
+    [shell.panel]
+    open_near_click_launcher = true
 
     [shell.screenshot]
     annotate = true
+    confirm_region = true
+    directory = "/home/shedon/Downloads"
 
     [shell.session]
     grid_columns = 5
 
 [theme]
+builtin = "Noctalia"
+community_palette = "Oxocarbon"
 custom_palette = "Payon"
+mode = "auto"
 source = "custom"
+wallpaper_scheme = "m3-content"
 
 [wallpaper]
 directory = "/home/shedon/Pictures/Wallpapers"
@@ -171,6 +217,12 @@ display = "icon_only"
 icon_size = 18
 min_length = 0
 
+[widget.audio_visualizer]
+bands = 48
+centered = false
+mirrored = false
+width = 100
+
 [widget.clipboard]
 enabled = false
 
@@ -180,9 +232,6 @@ show_value = false
 [widget.launcher]
 custom_image = "/usr/share/icons/cachyos.svg"
 custom_image_colorize = true
-
-[widget.media]
-enabled = false
 
 [widget.network]
 enabled = false
@@ -194,7 +243,8 @@ show_value = false
 enabled = false
 
 [widget.sysmon]
-stat = "cpu_temp"
+show_value = false
+stat = "gpu_usage"
 
 [widget.taskbar]
 show_active_indicator = false
@@ -204,6 +254,10 @@ show_value = false
 
 [widget.tray]
 drawer = true
+drawer_columns = 5
+
+[widget.volume]
+show_label = false
 
 [widget.wallpaper]
 enabled = false

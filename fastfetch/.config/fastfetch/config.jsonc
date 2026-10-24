@@ -73,11 +73,6 @@
             "keyColor": "blue"
         },
         {
-            "type": "shell",
-            "key": "│ ├󰞷 ",
-            "keyColor": "blue"
-        },
-        {
             "type": "de",
             "key": "󰧨  DE",
             "keyColor": "blue"
@@ -93,8 +88,19 @@
             "keyColor": "blue"
         },
         {
+            "type": "command",
+            "key": "│ ├󰧨 ",
+            "keyColor": "blue",
+            "text": "pacman -Q noctalia-shell 2>/dev/null || echo 'unknown'"
+        },
+        {
             "type": "cursor",
             "key": "│ ├󰆿 ",
+            "keyColor": "blue"
+        },
+        {
+            "type": "shell",
+            "key": "│ ├󰞷 ",
             "keyColor": "blue"
         },
         {

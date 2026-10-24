@@ -121,10 +121,9 @@ binds {
     Mod+Shift+F                         { fullscreen-window; }
 
     // ─── Screenshots ───
-    //CTRL+Shift+2			            { spawn-sh "niri msg action screenshot && sleep 0.5 && sh -c 'satty --early-exit --filename ~/Downloads/$(command ls -t ~/Downloads/ | head -n 1)'"; }
-    CTRL+Shift+2                        { screenshot; }
-    CTRL+Shift+1                        { screenshot-screen; }
-    CTRL+Shift+3                        { screenshot-window; }
+    CTRL+Shift+2                        { spawn-sh "noctalia msg screenshot-region"; }
+    CTRL+Shift+1                        { spawn-sh "noctalia msg screenshot-fullscreen"; }
+    CTRL+Shift+3                        { spawn-sh "noctalia msg screenshot-fullscreen pick"; }
 
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.

@@ -77,3 +77,7 @@ Typically if I'm installing on a machine that has an existing configuration for 
 3. If you want to use the config you had previously stored in your dotfiles repo, then run `git restore <dir>` or `git restore .` if you're feeling wild.
 
 > `--adopt` flag *will* overwrite the contents of your current directory with the contents from your target directory.
+
+> [!IMPORTANT]  
+For sddm configs run stow targeting `/etc` so that `sddm.conf` lands in the right spot: `sudo stow -t /etc sddm`  
+Also copy the theme folder directly to `/usr/share/sddm/themes/` so SDDM doesn't run into permission issues trying to read your home directory: `sudo cp -r sddm/themes/silent /usr/share/sddm/themes/`
